@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Rubik", sans-serif;
+}
+
+/**********/
+/* CONTAINER */
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+/**********/
+/* LOGO */
+
+.text-logo {
+  color: #fd4c00;
+}
+.logo {
+  color: #fff;
+}
+
+/********/
+/* btn */
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 2px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full {
+  color: #fff;
+  background-color: #fd4c00;
+  margin-top: 4rem;
+}
+.btn--outline {
+  color: #fff;
+  margin-top: 4rem;
+  border: 1px solid #fd4c00;
+  margin-left: 4rem;
+}
+
+/**********/
+/* NAVBAR */
+.nav {
+  gap: 20px;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fd4c00;
+}
+
+/**********/
+/* lEFT HERO SECTION */
+
+.section-hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.hero-left-box {
+  border-right: 1px solid #ccc;
+  height: 100%;
+  background-color: #1d2429;
+
+  background-image: radial-gradient(
+    circle at top left,
+    #fd4c00 0%,
+    rgba(253, 76, 0, 0.6) 15%,
+    transparent 38%
+  );
+  padding: 4.8rem;
+}
+
+.hero-text-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 4rem;
+}
+
+.hero-title {
+  font-size: 9.6rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 6rem;
+}
+
+.hero-description {
+  font-size: 2.6rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-top: 4rem;
+  font-weight: 100;
+}
+
+.content-right {
+  text-align: left;
+}
+
+.open-text {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.orange-line {
+  height: 3px;
+  background-color: #fd4c00;
+  width: 100%;
+}
