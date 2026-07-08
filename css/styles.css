@@ -16,8 +16,8 @@ body {
 /**********/
 /* CONTAINER */
 .container {
-  max-width: 100rem;
-  margin: 0 auto;
+  /* max-width: 100rem; */
+  margin: 0 10rem;
 }
 
 /**********/
@@ -65,8 +65,18 @@ body {
 
 /**********/
 /* NAVBAR */
+header {
+  position: relative;
+}
+
 .nav {
-  gap: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  /* padding: 5rem 10rem; */
+}
+
+.main-nav-list-container {
   font-size: 2.4rem;
   display: flex;
   justify-content: space-between;
@@ -99,10 +109,9 @@ body {
 }
 
 .hero-left-box {
-  border-right: 1px solid #ccc;
-  height: 100%;
+  border-right: 1px solid #1d2429;
   background-color: #1d2429;
-
+  height: 100%;
   background-image: radial-gradient(
     circle at top left,
     #fd4c00 0%,
@@ -151,4 +160,18 @@ body {
   height: 3px;
   background-color: #fd4c00;
   width: 100%;
+}
+
+/**********/
+/* RIGHT HERO SECTION */
+.hero-img {
+  height: 530px;
+  width: 530px;
+  position: absolute;
+  bottom: 0;
+}
+.hero-right-box {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to bottom, #fd4c00 0%, #1d2429 60%);
 }
