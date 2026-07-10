@@ -200,6 +200,7 @@ header {
   font-size: 4.8rem;
   text-align: center;
   padding: 4rem 0;
+  text-transform: uppercase;
 }
 .program-container {
   display: grid;
@@ -241,14 +242,40 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
-.program-second-container img {
-  width: 70%;
-  height: 70%;
+.program-second-img {
+  background: linear-gradient(to bottom, #1c2328 10%, var(--primary-color) 70%);
+}
+.program-second-img img {
+  /* width: 70%;
+  height: 70%; */
   object-fit: cover;
   display: block;
   justify-self: end;
   overflow: visible;
+  /* object-position: bottom; */
 }
 .program-heading {
   font-size: 9.6rem;
+  letter-spacing: 2;
+  font-weight: bold;
+}
+
+.program-second-text-container {
+  background: linear-gradient(
+    to top,
+    var(--bg-dark-primary) 0%,
+    var(--primary-color) 80%
+  );
+  padding: 5rem;
+}
+.btn-learn-more {
+  border: 1px solid #fff;
+  margin-top: 4rem;
+  padding: 2rem 4rem;
+}
+.program-second-text-container p {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+  line-height: 1.5;
+  max-width: 70%;
 }
