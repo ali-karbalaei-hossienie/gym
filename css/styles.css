@@ -13,9 +13,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 :root {
-  --primary-color: #fd4c00;
-  --bg-dark: #1d2429;
-  --second-color: #b13500;
+  --primary-color: #7d2c11;
+  --bg-dark-primary: #1d2429;
+  --secondary-color: #fd4c00;
+  --bg-dark-secondary: #161616;
 }
 
 /**********/
@@ -28,10 +29,11 @@ body {
 /* LOGO */
 
 .text-logo {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .logo {
   color: #fff;
+  font-size: 3rem;
 }
 
 /********/
@@ -42,7 +44,7 @@ body {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-  padding: 1.6rem 3.2rem;
+  padding: 2rem 3.1rem;
   border-radius: 2px;
   border: none;
   cursor: pointer;
@@ -56,12 +58,14 @@ body {
   margin-top: 4rem;
 }
 .btn--full:hover {
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
 }
 .btn--outline {
   color: #fff;
-  margin-top: 4rem;
   border: 1px solid var(--primary-color);
+}
+.btn-outline-hero {
+  margin-top: 4rem;
   margin-left: 4rem;
 }
 
@@ -97,7 +101,7 @@ header {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /**********/
@@ -110,8 +114,8 @@ header {
 }
 
 .hero-left-box {
-  border-right: 1px solid var(--bg-dark);
-  background-color: var(--bg-dark);
+  border-right: 1px solid var(--bg-dark-primary);
+  background-color: var(--bg-dark-primary);
   height: 100%;
   background-image: radial-gradient(
     circle at top left,
@@ -175,7 +179,7 @@ header {
 .hero-right-box {
   position: relative;
   height: 100%;
-  background: linear-gradient(to bottom, var(--primary-color) 0%, #1d2429 60%);
+  background: linear-gradient(to bottom, var(--primary-color) 35%, #1d2429 90%);
   padding: 4.8rem;
 }
 
@@ -192,5 +196,46 @@ header {
 }
 
 .btn-login:hover {
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
+}
+
+/* program */
+.program {
+  background: linear-gradient(to right, #1c2328 40%, var(--primary-color) 100%);
+  padding: 4rem;
+  color: #fff;
+}
+.programTitle {
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.program-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+.btn-program {
+  font-size: 1.7rem;
+  padding: 1.7rem 2.7rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--bg-dark-secondary);
+  padding: 4rem 3rem;
+}
+
+.card h1 {
+  margin-bottom: 1.8rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.program-icon {
+  width: 7.2rem;
+  height: 6.2rem;
+  margin-bottom: 2.5rem;
 }
