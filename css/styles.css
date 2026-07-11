@@ -18,6 +18,10 @@ body {
   --bg-dark-primary: #1d2429;
   --secondary-color: #fd4c00;
   --bg-dark-secondary: #161616;
+  --bg-dark-tertiary: #1e1e1e;
+}
+ul {
+  list-style: none;
 }
 
 /**********/
@@ -204,7 +208,7 @@ header {
 }
 .program-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(50px, 420px));
   gap: 4rem;
 }
 .btn-program {
@@ -232,6 +236,8 @@ header {
   margin-bottom: 2.5rem;
 }
 
+/**********/
+
 /* program-second */
 
 .program-second {
@@ -246,13 +252,10 @@ header {
   background: linear-gradient(to bottom, #1c2328 10%, var(--primary-color) 70%);
 }
 .program-second-img img {
-  /* width: 70%;
-  height: 70%; */
   object-fit: cover;
   display: block;
   justify-self: end;
   overflow: visible;
-  /* object-position: bottom; */
 }
 .program-heading {
   font-size: 9.6rem;
@@ -278,4 +281,100 @@ header {
   margin-top: 4rem;
   line-height: 1.5;
   max-width: 70%;
+}
+
+/**********/
+/* card pricing */
+.cards-pricing {
+  background-color: var(--bg-dark-primary);
+}
+.card-pricing-title {
+  margin-bottom: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4.8rem;
+}
+.card-pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  gap: 8rem;
+}
+
+.card-pricing {
+  background-color: var(--bg-dark-tertiary);
+  padding: 4rem 3rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-pricing:hover {
+  transform: scale(1.1);
+}
+
+.card-pricing-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.card-pricing-header p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.pricing {
+  font-size: 6.8rem;
+  font-weight: 300;
+}
+
+.card-bill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-bill span:nth-child(2) {
+  font-size: 1.6rem;
+}
+
+.btn-pricing {
+  width: 100%;
+  color: rgb(48, 48, 228);
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.card-pricing-body-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-pricing-body {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-pricing-body img {
+  width: 42px;
+  height: 42px;
+}
+
+.card-pricing-body span {
+  font-size: 1.6rem;
+}
+
+.popular {
+  transform: scale(1.1);
+  background-color: var(--secondary-color);
+  border-radius: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.popular:hover {
+  transform: scale(1);
 }
