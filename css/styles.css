@@ -36,6 +36,7 @@ ul {
 
 .text-logo {
   color: var(--secondary-color);
+  font-weight: normal;
 }
 .logo {
   font-size: 3rem;
@@ -143,9 +144,9 @@ header {
 
 .hero-description {
   font-size: 2.6rem;
-  letter-spacing: 0.5px;
   margin-top: 4rem;
   font-weight: 100;
+  line-height: 1.4;
 }
 
 .content-right {
