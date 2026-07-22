@@ -22,6 +22,36 @@ body {
   --secondary-bg-dark: #161616;
   --tertiary-bg-dark: #1e1e1e;
   --color-white: #fff;
+  --fs-xs: 1.2rem;
+  --fs-sm: 1.4rem;
+  --fs-base: 1.6rem;
+  --fs-md: 1.8rem;
+  --fs-lg: 2.4rem;
+  --fs-xl: 3.2rem;
+  --fs-2xl: 4.8rem;
+  --fs-3xl: 6.4rem;
+  --fs-4xl: 9.6rem;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --fs-lg: 2.2rem;
+    --fs-xl: 2.8rem;
+    --fs-2xl: 4rem;
+    --fs-3xl: 5.6rem;
+    --fs-4xl: 7.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-md: 1.6rem;
+    --fs-lg: 2rem;
+    --fs-xl: 2.4rem;
+    --fs-2xl: 3.2rem;
+    --fs-3xl: 4rem;
+    --fs-4xl: 4.8rem;
+  }
 }
 
 /**********/
@@ -40,69 +70,23 @@ h3 {
 }
 
 h1 {
-  font-size: 9.6rem;
+  font-size: var(--fs-4xl);
 }
 
 h2 {
-  font-size: 6.4rem;
+  font-size: var(--fs-3xl);
 }
 
 h3 {
-  font-size: 4.8rem;
+  font-size: var(--fs-2xl);
 }
 h4 {
-  font-size: 2.1rem;
+  font-size: var(--fs-lg);
 }
-p {
-  font-size: 2.5rem;
-  line-height: 1.4;
-}
+
 ul {
   list-style: none;
-  font-size: 2.4rem;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 6.4rem;
-  }
-  h2 {
-    font-size: 4.8rem;
-  }
-  h3 {
-    font-size: 2.5rem;
-  }
-  h4 {
-    font-size: 1.6rem;
-  }
-  p {
-    font-size: 2rem;
-  }
-  ul {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 4.2rem;
-  }
-  h2 {
-    font-size: 3.2rem;
-  }
-  h3 {
-    font-size: 1.8rem;
-  }
-
-  h4 {
-    font-size: 1.2rem;
-  }
-  p {
-    font-size: 1.4rem;
-  }
-  ul {
-    font-size: 1.4rem;
-  }
+  font-size: var(--fs-lg);
 }
 
 /********/
@@ -111,7 +95,7 @@ ul {
 .btn {
   display: inline-block;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: var(--fs-lg);
   font-weight: 600;
   padding: 2rem 3.1rem;
   border-radius: 2px;
@@ -121,19 +105,17 @@ ul {
   transition: all 0.3s;
   margin-top: 4rem;
 }
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .btn {
-    font-size: 1.8rem;
     margin-top: 3.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .btn {
-    font-size: 1.6rem;
     margin-top: 3rem;
   }
-}
+} */
 
 .btn--full {
   background-color: var(--color-secondary);
@@ -153,7 +135,7 @@ ul {
   font-weight: normal;
 }
 .logo {
-  font-size: 3rem;
+  font-size: var(--fs-xl);
 }
 
 /**********/
@@ -217,6 +199,8 @@ header {
 }
 
 .hero-description {
+  font-size: var(--fs-lg);
+  line-height: 1.5;
   margin-top: 4rem;
 }
 
@@ -226,7 +210,6 @@ header {
 
 .open-text {
   text-transform: uppercase;
-  font-size: 6.4rem;
   font-weight: bold;
   line-height: 1.1;
 }
@@ -256,7 +239,6 @@ header {
 .btn-login {
   border: 1px solid #d9d9d9;
   padding: 0.6rem 2rem;
-  font-size: 2.4rem;
   font-weight: normal;
   position: absolute;
   right: 8rem;
@@ -282,7 +264,7 @@ header {
   gap: 4rem;
 }
 .btn-program {
-  font-size: 1.7rem;
+  font-size: var(--fs-base);
   padding: 1.7rem 2.7rem;
   margin-top: 2rem;
 }
@@ -292,14 +274,15 @@ header {
   padding: 4rem 3rem;
 }
 
-.card h4 {
+.card-title {
   margin-bottom: 1.8rem;
 }
 
-.card p {
-  font-size: 1.5rem;
+.card-description {
+  font-size: var(--fs-base);
   line-height: 1.3;
 }
+
 .program-icon {
   width: 7.2rem;
   height: 6.2rem;
@@ -328,7 +311,7 @@ header {
   overflow: visible;
 }
 .program-heading {
-  font-size: 9.6rem;
+  font-size: var(--fs-4xl);
   letter-spacing: 2;
   font-weight: bold;
 }
@@ -347,7 +330,7 @@ header {
   padding: 2rem 4rem;
 }
 .program-second-text-container p {
-  font-size: 2.4rem;
+  font-size: var(--fs-lg);
   margin-top: 4rem;
   line-height: 1.5;
   max-width: 70%;
@@ -362,7 +345,7 @@ header {
   margin-bottom: 4rem;
   text-align: center;
   text-transform: uppercase;
-  font-size: 4.8rem;
+  font-size: var(--fs-2xl);
 }
 .card-pricing-container {
   display: grid;
@@ -381,19 +364,19 @@ header {
 }
 
 .card-pricing-header h2 {
-  font-size: 2.4rem;
+  font-size: var(--fs-lg);
   margin-bottom: 2rem;
   font-weight: bold;
 }
 
 .card-pricing-header p {
-  font-size: 1.6rem;
+  font-size: var(--fs-lg);
   margin-bottom: 2rem;
   line-height: 1.5;
 }
 
 .pricing {
-  font-size: 6.8rem;
+  font-size: var(--fs-3xl);
   font-weight: 300;
 }
 
@@ -405,7 +388,7 @@ header {
 }
 
 .card-bill span:nth-child(2) {
-  font-size: 1.6rem;
+  font-size: var(--fs-base);
 }
 
 .btn-pricing {
@@ -469,7 +452,7 @@ header {
 
 .benefits-container h2 {
   font-weight: bold;
-  font-size: 8rem;
+  font-size: var(--fs-3xl);
   margin-bottom: 4rem;
 }
 
@@ -487,7 +470,7 @@ header {
 }
 
 .benefits-container ul li span {
-  font-size: 1.8rem;
+  font-size: var(--fs-md);
 }
 
 .image-grid {
@@ -541,7 +524,7 @@ header {
 }
 
 .footer-paragrah {
-  font-size: 1.6rem;
+  font-size: var(--fs-base);
   line-height: 2;
   font-weight: 100;
   margin-top: 2rem;
@@ -549,12 +532,12 @@ header {
 }
 
 .footer-heading {
-  font-size: 2.4rem;
+  font-size: var(--fs-lg);
   margin-bottom: 3rem;
 }
 
 .footer-list li {
-  font-size: 1.6rem;
+  font-size: var(--fs-base);
   margin-bottom: 2rem;
 }
 
