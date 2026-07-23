@@ -14,54 +14,52 @@
     <title>Gym Landing Page</title>
   </head>
   <body>
-    <header>
-      <!-- section hero -->
-      <div class="section-hero">
-        <section class="hero-left-box">
-          <div class="container">
-            <nav class="nav-container">
-              <div class="logo">MAX-<strong class="text-logo">GYM</strong></div>
-              <ul class="nav-list">
-                <li><a class="nav-list_item" href="#">Home</a></li>
-                <li><a class="nav-list_item" href="#">Contact</a></li>
-                <li><a class="nav-list_item" href="#">Services</a></li>
-              </ul>
-            </nav>
-            <div class="hero-text-container">
-              <div>
-                <h1 class="hero-title"><strong>SHAPE YOUR BODY</strong></h1>
-                <p class="hero-description">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  setting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s
-                </p>
-                <a href="#" class="btn btn--full">Get Started</a>
-                <a href="#" class="btn btn--outline btn-outline-hero"
-                  >Get Started</a
-                >
-              </div>
-              <div class="content-right">
-                <h2 class="open-text">OPEN<br />24H</h2>
-                <div class="orange-line"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="hero-right-box">
-          <a href="#" class="btn btn-login">Login</a>
-          <img
-            alt="Body builder posing in the gym"
-            src="./img/fitness/bodyBuilder1.png"
-            class="hero-img"
-          />
-        </section>
+    <header class="header">
+      <div class="container p-lg header__inner">
+        <div class="logo">MAX-<strong class="logo__text">GYM</strong></div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#">Home</a></li>
+            <li><a class="nav__link" href="#">Contact</a></li>
+            <li><a class="nav__link" href="#">Services</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn btn--outline header__login">Login</a>
       </div>
     </header>
+    <!-- section hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content p-lg">
+          <h1 class="hero__title"><strong>SHAPE YOUR BODY</strong></h1>
+          <p class="hero__description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--full">Get Started</a>
+            <a href="#" class="btn btn--outline">Get Started</a>
+          </div>
+        </div>
+
+        <div class="hero__image-box">
+          <img
+            src="./img/fitness/bodyBuilder1.png"
+            alt="Body builder"
+            class="hero__img"
+          />
+        </div>
+      </div>
+      <div class="hero__bg-right"></div>
+    </section>
     <!-- section program first -->
     <main>
       <section class="program-first">
         <h3 class="program-title">program</h3>
-        <div class="container program-container">
+        <div class="container p-lg program-container">
           <div class="card">
             <img
               alt="strength-training"
@@ -121,7 +119,7 @@
       <!-- section program second -->
       <section class="program-second">
         <h2 class="program-title">program</h2>
-        <div class="container program-second-container">
+        <div class="container p-lg program-second-container">
           <div class="program-second-text-container">
             <h1 class="program-heading">READY TO LEVEL UP YOUR BODY</h1>
             <a href="#" class="btn btn-learn-more">Learn More</a>
@@ -145,7 +143,7 @@
         <h2 class="program-title card-pricing-title">
           simple, transparant pricing
         </h2>
-        <div class="card-pricing-container container">
+        <div class="card-pricing-container p-lg container">
           <div class="card-pricing">
             <div class="card-pricing-header">
               <h2>Basic</h2>
@@ -434,7 +432,7 @@
       </section>
       <!-- why choose us -->
       <section class="benefits">
-        <div class="benefits-container container">
+        <div class="benefits-container p-lg container">
           <div class="image-grid">
             <img
               alt="body-builder"
@@ -478,7 +476,7 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container p-lg">
         <div class="grid-footer">
           <div class="logo">
             MAX-<span class="text-logo">GYM</span>
