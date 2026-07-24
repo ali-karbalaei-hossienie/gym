@@ -184,6 +184,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--primary-bg-dark);
+    padding: 4rem 6rem;
   }
   .header__inner.header_expand .nav {
     max-height: 100vh;
@@ -301,6 +302,7 @@ ul {
   display: flex;
   gap: 2.4rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .hero__image-box {
@@ -369,6 +371,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 4rem;
+  justify-content: center;
 }
 .btn-program {
   font-size: var(--fs-base);
@@ -408,6 +411,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1279px) {
