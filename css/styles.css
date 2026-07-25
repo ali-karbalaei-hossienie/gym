@@ -119,6 +119,10 @@ ul {
   border: 1px solid var(--color-primary);
 }
 
+.btn--outline:hover {
+  box-shadow: inset 0 0 0 3px var(--color-primary);
+}
+
 /**********/
 /* LOGO */
 
@@ -308,12 +312,16 @@ ul {
 .hero__image-box {
   position: relative;
   align-self: self-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__img {
   width: 100%;
   object-fit: cover;
   display: block;
+  max-width: 500px;
 }
 
 .open-text {
@@ -345,6 +353,9 @@ ul {
   }
   .hero__title {
     margin-top: 0;
+  }
+  .hero__content {
+    max-width: none;
   }
 }
 @media screen and (min-width: 946px) and (max-width: 1279px) {
@@ -595,27 +606,26 @@ ul {
   }
 }
 
-.benefits-container h2 {
-  font-weight: bold;
-  font-size: var(--fs-3xl);
-  margin-bottom: 4rem;
-}
-
-.benefits-container ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.benefits-container ul li img {
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
-}
-
-.benefits-container ul li span {
-  font-size: var(--fs-md);
+.benefits-container {
+  h2 {
+    font-weight: bold;
+    font-size: var(--fs-3xl);
+    margin-bottom: 4rem;
+  }
+  ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  ul li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  ul li span {
+    font-size: var(--fs-md);
+  }
 }
 
 .image-grid {
