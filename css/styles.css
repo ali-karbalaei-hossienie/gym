@@ -527,10 +527,96 @@
 }
 
 /* =====================
+   SIGN UP
+   ===================== */
+
+.signup-container {
+  background-color: var(--primary-bg-dark);
+}
+.signup {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.sugnup__field_heading {
+  margin-bottom: 2rem;
+}
+.sugnup__field_description {
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+.sugnup__field {
+  background-color: var(--primary-bg-dark);
+  background: color-mix(in srgb, var(--color-primary) 20%, transparent);
+
+  padding: 4rem;
+}
+
+.signup__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.sugnup_image {
+  background-image: url(/img/fitness/webg/anastase-maragos-7kEpUPB8vNk-unsplash.webp);
+  background-size: cover;
+  background-position: center;
+}
+.signup__form input {
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: var(--color-input);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.2rem;
+  border-width: medium;
+  border-style: none;
+  border-image: none;
+  border-radius: 9px;
+  color: #ffffff;
+}
+.signup__form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem
+    color-mix(in srgb, var(--color-primary) 80%, transparent);
+}
+
+.signup__form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+#select-where {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none !important;
+  background-color: var(--color-input);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+}
+
+#select-where option {
+  background-color: var(--primary-bg-dark);
+}
+
+.btn--form {
+  background-color: var(--color-primary);
+  align-self: end;
+  padding: 1.2rem;
+  width: 100%;
+}
+/* =====================
    FOOTER
    ===================== */
 .footer {
-  background-color: var(--primary-bg-dark);
+  background: linear-gradient(to top, #1c2328 60%, var(--color-primary) 100%);
 }
 
 .grid-footer {

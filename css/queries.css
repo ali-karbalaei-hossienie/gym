@@ -227,6 +227,28 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* =====================
+   SIGN UP
+   ===================== */
+@media screen and (max-width: 1280px) {
+  .signup__form {
+    grid-template-columns: 1fr;
+  }
+  .signup__form-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 946px) {
+  .signup {
+    grid-template-columns: 1fr;
+  }
+  .sugnup_image {
+    width: 100%;
+    height: 45rem;
+    grid-row: 1;
+  }
+}
 
 /* =====================
    FOOTER
