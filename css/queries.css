@@ -1,0 +1,241 @@
+@media (max-width: 1279px) {
+  :root {
+    --fs-lg: 2.2rem;
+    --fs-xl: 2.8rem;
+    --fs-2xl: 4rem;
+    --fs-3xl: 5.6rem;
+    --fs-4xl: 7.2rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1278px) {
+  :root {
+    --fs-md: 1.6rem;
+    --fs-lg: 2rem;
+    --fs-xl: 2.4rem;
+    --fs-2xl: 3.2rem;
+    --fs-3xl: 4rem;
+    --fs-4xl: 4.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fs-md: 1.4rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 1.8rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.5rem;
+    --fs-4xl: 3rem;
+  }
+}
+
+/* PADDING ALL SECTION */
+@media screen and (max-width: 768px) {
+  .p-lg {
+    padding: 2.5rem;
+  }
+}
+
+/* NAVBAR */
+@media screen and (max-width: 945px) {
+  .header {
+    position: relative;
+    padding: 0;
+  }
+  .header__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-bg-dark);
+    padding: 2.5rem;
+  }
+  .header__inner.header_expand .nav {
+    max-height: 100vh;
+    opacity: 1;
+  }
+  .nav {
+    grid-column: 1/-1;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .header__login {
+    display: none;
+  }
+  .header__login_mobile {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .nav .nav__list {
+    width: 100%;
+    gap: 1rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .nav .nav__list .nav__link {
+    border-bottom: 1px solid var(--color-white);
+    width: 100%;
+    display: block;
+    padding-bottom: 1rem;
+  }
+  .toggler {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+
+    cursor: pointer;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-white);
+    margin: 3px 0;
+    transition: all 0.4s ease-in;
+  }
+  .header__inner.header_expand .bar-one {
+    transform: translateY(10.5px) rotate(45deg);
+    margin: 6px 0;
+  }
+  .header__inner.header_expand .bar-two {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  .header__inner.header_expand .bar-three {
+    transform: translateY(-10.5px) rotate(-45deg);
+  }
+}
+
+/* =====================
+   HERO SECTION
+   ===================== */
+
+@media screen and (max-width: 945px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .hero__actions {
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  .hero__description {
+    text-align: center;
+  }
+  .hero__bg-right {
+    display: none;
+  }
+  .hero__title {
+    margin-top: 0;
+  }
+  .hero__content {
+    max-width: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero__image-box {
+    height: auto;
+  }
+  .hero__img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 946px) and (max-width: 1400px) {
+  .hero__inner {
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .hero__bg-right {
+    width: 38.3%;
+  }
+  .hero__image-box {
+    height: 80%;
+    overflow: hidden;
+  }
+  .hero__content {
+    flex-wrap: wrap;
+  }
+}
+
+/* =====================
+   SECOND PROGRAM
+   ===================== */
+@media screen and (max-width: 1279px) {
+  .program-second-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* =====================
+   CARD PRICING
+   ===================== */
+
+@media screen and (max-width: 1279px) {
+  .popular {
+    transform: scale(1);
+  }
+}
+
+/* =====================
+   WHY CHOOSE US PRICING
+   ===================== */
+@media screen and (max-width: 1200px) {
+  .benefits-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 5rem;
+  }
+  .image-grid {
+    order: 2;
+  }
+  .benefits__content {
+    width: 100%;
+  }
+}
+
+/* =====================
+   TESTIMONIALS
+
+   ===================== */
+
+@media screen and (max-width: 1280px) {
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials_heading {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonials {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+@media screen and (max-width: 768px) {
+  .grid-footer {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}
